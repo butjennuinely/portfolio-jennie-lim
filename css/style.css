@@ -5,8 +5,21 @@ html {
   scroll-behavior: smooth;
 }
 
+main {
+  padding-top: 100px;
+}
+
+header {
+  background-color: #F9F6FF;
+  width:100vw;
+  text-align: center;
+  padding: 1.2em 0 0.5em 0;
+  margin: -0.5em 0 0 0;
+  position: fixed;
+}
 
 body {
+  font-family: 'Synthese', sans-serif;
   background-color: #fefefe;
   line-height: 1.4;
 }
@@ -30,14 +43,14 @@ h2 {
 h3 {
   font-family:'Presicav', sans-serif;
   font-weight: 400;
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-size: 1em;
   color:#E883CF;
 }
 
 h4 {
   font-family:'Presicav', sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   text-transform: uppercase;
   font-size: 1em;
   color:darkgrey;
@@ -51,6 +64,45 @@ p {
   line-height: 1.6;
 }
 
+nav {
+  display: inline-block;
+  padding-top:0.2em;
+  width:100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  font-family:'Presicav';
+  font-weight:200;
+  font-size:0.8em;
+}
+
+nav > ul > li {
+  display: inline-block;
+  padding: 0 0 0.5em 0;
+}
+
+nav > ul > li > a {
+  padding: 0 30px;
+  text-transform: uppercase;
+  font-weight: 200;
+  color: #E883CF;
+}
+
+nav > ul > li > a:visited {
+  color: #D841B3;
+}
+
+nav > ul > li > a:hover, a:focus {
+  color: black;
+  text-decoration: none;
+}
+
+nav > ul > li > a.active {
+  color:#FA6A47;
+}
+
 img {
   width: 100%;
 }
@@ -60,23 +112,20 @@ a {
    color: #E883CF;
 }
 
-
-a:hover, a:focus {
-    color: #E883CF;
-    text-decoration: underline;
-}
-
 a.visited {
   color: #D841B3;
+}
+
+a:hover, a:focus {
+    color: black;
+    text-decoration: underline;
 }
 
 a.active {
   color:#FA6A47;
 }
 
-
 .button {
-
    color: white;
    background-color: #E883CF;
    padding: 13px 15px 15px 15px;
@@ -84,4 +133,72 @@ a.active {
 
 .button:hover, .button :focus {
     color: black;
+}
+
+.button:active {
+    color:#FA6A47;
+}
+
+.logo {
+  font-family:'Presicav', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  color:#E883CF;
+  max-width: 250px;
+}
+
+.container {
+  padding: 0 2em;
+}
+
+#hero {
+  background-image: url(img/bg/anew-bg.jpg);
+  background-color: #FCFFF6;
+  padding: 1em 0;
+  display: block;
+  position:relative;
+  width:100vw;
+  height:50vh;
+}
+
+#hero .hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.row {
+  margin: 25px 0;
+}
+
+#work {
+  margin: 2em 6em;
+}
+
+#work .row {
+  padding-bottom: 3em;
+}
+
+.center {
+  text-align: center;
+}
+
+.halfwidth {
+  width:50vw;
+}
+
+footer {
+  background-color: #F9F6FF;
+  width:100vw;
+  text-align: center;
+  padding: 1.2em 0 0.5em 0;
+  margin: 0 0 0 0;
+}
+
+footer .socials {
+  margin: 2.5em 0 2.5em 0;
 }
