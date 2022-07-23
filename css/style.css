@@ -1,11 +1,87 @@
-<style>
+
+/* Colors */
+
+html {
+  scroll-behavior: smooth;
+}
+
 
 body {
   background-color: #fefefe;
+  line-height: 1.4;
 }
 
-h1, h2, h3 {
-  font-family: 'Roboto', sans-serif;
+h1, h2, h3{
+  font-family: 'Synthese', sans-serif;
 }
 
-</style>
+h1 {
+  font-family:'Synthese', sans-serif;
+  font-weight: 400;
+  font-size: 2.75em;
+}
+
+h2 {
+  font-family:'Synthese', sans-serif;
+  font-weight: 400;
+  font-size: 2.25em;
+}
+
+h3 {
+  font-family:'Presicav', sans-serif;
+  font-weight: 400;
+  text-transform: capitalize;
+  font-size: 1em;
+  color:#E883CF;
+}
+
+h4 {
+  font-family:'Presicav', sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 1em;
+  color:darkgrey;
+}
+
+p {
+  font-family:'Synthese', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  color:black;
+  line-height: 1.6;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+   text-decoration: none;
+   color: #E883CF;
+}
+
+
+a:hover, a:focus {
+    color: #E883CF;
+    text-decoration: underline;
+}
+
+a.visited {
+  color: #D841B3;
+}
+
+a.active {
+  color:#FA6A47;
+}
+
+
+.button {
+
+   color: white;
+   background-color: #E883CF;
+   padding: 13px 15px 15px 15px;
+}
+
+.button:hover, .button :focus {
+    color: black;
+}
